@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+	width: 100vw;
+	height: 100vh;
+	height: 100svh;
+
+	padding-top: env(safe-area-inset-top);
+	padding-right: env(safe-area-inset-right);
+	padding-bottom: env(safe-area-inset-bottom);
+	padding-left: env(safe-area-inset-left);
+}
+
+@layer components {
+	.nice-card {
+		@apply group-data-[theme=light]/root:bg-neutral-50 group-data-[theme=dark]/root:bg-neutral
+	}
+}

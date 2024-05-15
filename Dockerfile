@@ -20,4 +20,8 @@ RUN pnpm install --prod
 
 EXPOSE 3000
 
+LABEL org.opencontainers.image.source=https://github.com/Koi-Jiang/lab-scheduler
+LABEL org.opencontainers.image.description="Lab Scheduler"
+LABEL org.opencontainers.image.licenses=MIT
+
 CMD ["pnpm", "start"]
